@@ -1,3 +1,7 @@
+html {
+    display: block;
+}
+
 html, body {
     min-width: 290px;
     color: #4d4e53;
@@ -6,25 +10,11 @@ html, body {
     line-height: 1.5;
 }
 
-html {
-    display: block;
-}
-
 head {
     display: none;
 }
 
 #navbar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-height: 275px;
-    border: none;
-    z-index: 1;
-    border-bottom: 2px solid;
     position: fixed;
     min-width: 290px;
     top: 0px;
@@ -40,9 +30,8 @@ nav {
 }
 
 #main-doc {
-    position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
+    position: absolute;
+    margin-left: 310px;
     padding: 20px;
     margin-bottom: 110px;
 }
@@ -93,11 +82,31 @@ p {
 }
 
 #navbar ul {
-    border: 1px solid;
-    height: 230px;
+    height: 88%;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+#navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 section article {
